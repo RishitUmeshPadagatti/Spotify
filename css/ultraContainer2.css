@@ -1,0 +1,181 @@
+#upperFullScreen {
+    /* border: 1px solid red; */
+
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#topUpperFullScreen {
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#topUpperFullScreen span,
+#topUpperFullScreen img {
+    /* border: 1px solid white; */
+    margin: 25px 30px;
+    cursor: pointer;
+}
+
+#topUpperFullScreen span {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+#topUpperFullScreen img {
+    width: 25px;
+}
+
+#middleUpperFullScreen {
+    /* border: 1px solid red; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#middleUpperFullScreen img {
+    max-width: 500px;
+    width: 75vw;
+    margin: 20px 10px;
+    border-radius: 5px;
+}
+
+#lowerUpperFullScreen {
+    /* border: 1px solid blue; */
+
+    padding: 30px;
+}
+
+#lowerUpperFullScreen #songNameAndStuff {
+    /* border: 1px solid green; */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 10px 30px 10px;
+}
+
+#lowerUpperFullScreen #songNameAndStuff img {
+    width: 27px;
+}
+
+#songNameAndStuff .currentlyPlayingSongName div {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#songNameAndStuff .currentlyPlayingArtistname div {
+    font-size: 13px;
+}
+
+#seekBarInFullScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 10px;
+}
+
+#seekBarInFullScreen span {
+    font-size: 10px;
+    margin: 0px 5px;
+}
+
+#controlsInFullScreen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 10px;
+}
+
+/* #lowerFullScreen {
+    border: 1px solid blue;
+} */
+
+@media only screen and (max-width: 425px) {
+    #lowerUpperFullScreen {
+        padding: 10px;
+    }
+
+    #controlsInFullScreen img:nth-child(1),
+    #controlsInFullScreen img:nth-child(2),
+    #controlsInFullScreen img:nth-child(3),
+    #controlsInFullScreen img:nth-child(4) {
+        width: 35px;
+    }
+
+    #controlsInFullScreen img:nth-child(5) {
+        width: 30px;
+    }
+
+    #songNameAndStuff .currentlyPlayingSongName div {
+        font-size: 17px;
+    }
+    
+    #songNameAndStuff .currentlyPlayingArtistname div {
+        font-size: 12px;
+    }
+
+    .scrolling-container3 {
+        width: 200px;
+    }
+
+
+    @keyframes scrollText3 {
+        0%,
+        100% {
+            transform: translateX((0%));
+        }
+
+        50% {
+            transform: translateX(calc(-100% + 200px));
+        }
+    }
+}
+
+
+
+
+.range4 {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: var(--lightGrey);
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.range4::-webkit-slider-runnable-track {
+    height: 4px;
+}
+
+.range4::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 8px;
+    width: 8px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: -2px;
+}
+
+.range4::-webkit-slider-thumb:active {
+    background-color: var(--spotifyGreen);
+}
+
+.range4:focus {
+    outline: none;
+}
+
+#parentOfUlSongQueueHtml{
+    background-color: var(--darkGrey);
+    margin: 8px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    height: max-content;
+}

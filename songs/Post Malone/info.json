@@ -1,0 +1,12 @@
+{
+    "title": "Malone",
+    "description": "Post Malone Songs",
+    "path": "songs/Post Malone/cover.jpeg",
+    "type": "Playlist",
+    "owner": "Rishit Umesh Padagatti",
+    "songs": [
+        "songs/global/Forever - Justin Bieber (feat. Post Malone & Clever).mp3",
+        "songs/global/Go Flex - Post Malone.mp3",
+        "songs/global/Sunflower - Post Malone, Swae Lee.mp3"
+    ]
+}

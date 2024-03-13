@@ -1,0 +1,22 @@
+{
+    "title": "Harrys House",
+    "description": "Harrys House Songs",
+    "path": "songs/Harrys House/cover.jpeg",
+    "type": "Album",
+    "owner": "Harry Styles",
+    "songs": [
+        "songs/global/Music For A Sushi Restaurant - Harry Styles.mp3",
+        "songs/global/Late Night Talking - Harry Styles.mp3",
+        "songs/global/Grapejuice - Harry Styles.mp3",
+        "songs/global/As It Was - Harry Styles.mp3",
+        "songs/global/Daylight - Harry Styles.mp3",
+        "songs/global/Little Freak - Harry Styles.mp3",
+        "songs/global/Matilda - Harry Styles.mp3",
+        "songs/global/Cinema - Harry Styles.mp3",
+        "songs/global/Daydreaming - Harry Styles.mp3",
+        "songs/global/Keep Driving - Harry Styles.mp3",
+        "songs/global/Satellite - Harry Styles.mp3",
+        "songs/global/Boyfriends - Harry Styles.mp3",
+        "songs/global/Love Of My Life - Harry Styles.mp3"
+    ]
+}

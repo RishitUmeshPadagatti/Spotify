@@ -1,0 +1,68 @@
+.ulSongQueueHtml li {
+    border-radius: 5px;
+    /* border: 1px solid grey; */
+}
+
+.queueSong {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.queueSong:hover {
+    background-color: #2a2929;
+}
+
+.queueLeftSide,
+.queueRightSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.queue-number-image {
+    width: 40px;
+    text-align: center;
+}
+
+.queue-number-image .queue-number {
+    font-size: 14px;
+}
+
+.queue-number-image .queue-image {
+    width: 11px;
+}
+
+.queueLeftSide .songAndArtist {
+    margin-left: 12px;
+}
+
+.queueRightSide span,
+.queueRightSide img {
+    margin: 0px 7px;
+}
+
+@media screen and (max-width: 520px) {
+    .queueSong {
+        height: 55px;
+    }
+
+    .queueLeftSide .songAndArtist {
+        margin-left: 1px;
+    }
+
+    .queue-number-image {
+        width: 30px;
+    }
+
+    .queue-number-image .queue-number {
+        font-size: 12px;
+    }
+
+    .queueRightSide span {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"></script>
+
+    <title>Spotify</title>
+
+    <link rel="stylesheet" href="css/styleGridDialogbox.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/mainContainer1.css">
+    <link rel="stylesheet" href="css/mainContainer2.css">
+    <link rel="stylesheet" href="css/playbar.css">
+    <link rel="stylesheet" href="css/ultraContainer2.css">
+    <link rel="stylesheet" href="css/queue.css">
+</head>
+
+<body>
+    <div id="overlay" onclick="closeDialog()"></div>
+    <div id="ultraContainer1">
+        <div id="sidebar">
+            <div class="upperAndLowerSidebar" id="upperSidebar">
+                <ul>
+                    <li onclick="showContainer1()" class="cp">
+                        <img class="svgToWhite width30px" src="icons/home.svg" alt="Home">
+                        <span class="textInSidebar toHide">Home</span>
+                    </li>
+                    <li class="cp">
+                        <img class="width30px" src="icons/search.svg" alt="Search">
+                        <span class="textInSidebar toHide convertWhiteTextToLightGrey">Search</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="upperAndLowerSidebar" id="lowerSidebar">
+                <div class="upperSectionOfLowerSidebar">
+                    <div class="yourLibrary toHide cp">
+                        <img class="width30px" src="icons/library.svg" alt="Library">
+                        <span class="textInSidebar toHide convertWhiteTextToLightGrey">Your Library</span>
+                    </div>
+
+                    <div class="plusAndLeftArrow cp">
+                        <!-- <img class="width30px toHide" src="icons/plus.svg" alt="Plus"> -->
+                        <img id="leftSvg" class="width30px" src="icons/left.svg" alt="Left">
+                    </div>
+                </div>
+
+                <div class="playlistsContainer">
+                    <ul class="playlistsContainerUl">
+                        <!-- <li onclick="getSongsForAPlaylist('${element.href}')">
+                        <img class="playlistImgLibrary" src="${tempResponse.path}" alt="Liked">
+                        <div class="rightOfPlaylistCover toHide">
+                            <div class="playlistName">${tempResponse.title}</div>
+                            <div class="playlistOwner convertWhiteTextToLightGrey">${tempResponse.type} <img src="icons/star.svg" alt=""> ${tempResponse.songs.length} ${singularOrPlural}</div>
+                        </div>
+                    </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="mainContainer">
+            <div id="higherMainContainer1">
+                <div id="mainContainer1">
+                    <div class="upperMainContainer1">
+                        <!-- <div class="miniCard" onclick="getSongsForAPlaylist('${element.href}')">
+                        <img class="playlistImgMiniCard" src="${tempResponse.path}" alt="Liked">
+                        <div>${tempResponse.title}</div>
+                    </div> -->
+                    </div>
+
+                    <div class="lowerMainContainer1" id="lowerMainContainer1">
+                        <!-- <div class="square">
+                        <img class="square-child-img" src="cover.jpeg" alt="">
+                    </div> -->
+                        <!-- <img src="" alt="" id="exception" style="border: 1px solid white; height: 300px; width: 300px;"> -->
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="higherMainContainer2">
+                <div id="mainContainer2">
+                    <!-- <div class="upperMainContainer2" style="background: radial-gradient(circle at left, #3f1e65 0%, #abdc98 100%); 
+                background-size: 400% 400%;
+                animation: animationName 15s ease infinite;">
+                    <img class="playListImgUpperMainContainer2" src="cover.jpeg" alt="">
+                    <div class="playlistInfoUpperMainContainer2">
+                        <div class="convertWhiteTextToLighterGrey">Playlist</div>
+                        <div>This is Zayn</div>
+                        <div class="convertWhiteTextToLighterGrey">This is ZAYN. The essential tracks, all in one
+                            playlist.</div>
+                        <div>Rishit Umesh Padagatti • 32 songs, <span class="convertWhiteTextToLighterGrey">about 1hr
+                                45min</span> </div>
+                    </div> -->
+                </div>
+
+                <div class="lowerMainContainer2">
+                    <div class="playPlayist">
+                        <button onclick="playPlaylist()">
+                            <img src="icons/playPlaylist.svg" alt="play playlist">
+                        </button>
+
+                    </div>
+                    <ul class="songList">
+                        
+                        <!-- <li class="song">
+                            <div class="leftSide">
+                                <div class="number-image convertWhiteTextToLightGrey">
+                                    <div class="number" style="display: none;">1</div>
+                                    <img class="playButtonInsideNumberImage" src="icons/playPlaylistWhite.svg" alt="">
+                                </div>
+                                <img class="songCoverImgSong" src="cover.jpeg" alt="cover">
+                                <div class="songAndArtist">
+                                    <div class="songName">Look Up At The Stars</div>
+                                    <div class="artistName convertWhiteTextToLightGrey">Shawn Mendes</div>
+                                </div>
+                            </div>
+                            <div class="rightSide">
+                                <img class="iconsRightSideSong" src="icons/deleteFromPlaylist.svg" alt="Delete from playlist">
+                                <img class="iconsRightSideSong" src="icons/plus.svg" alt="Plus">
+                                <img class="iconsRightSideSong" src="icons/add to queue.svg" alt="add to queue" style="visibility: hidden;">
+                                <img class="iconsRightSideSong" src="icons/like.svg" alt="Like" style="visibility: hidden;">
+                                <span class="convertWhiteTextToLightGrey">3:50</span>
+                            </div>
+                        </li> -->
+                        <!-- <li class="song">
+                            <div class="leftSide">
+                                <div class="number-image convertWhiteTextToLightGrey">
+                                    <div class="number">2</div>
+                                    <img class="playButtonInsideNumberImage" src="icons/playPlaylistWhite.svg" alt="" style="display: none;">
+                                </div>
+                                <img class="songCoverImgSong" src="cover.jpeg" alt="cover">
+                                <div class="songAndArtist">
+                                    <div class="songName">Look Up At The Stars</div>
+                                    <div class="artistName convertWhiteTextToLightGrey">Shawn Mendes</div>
+                                </div>
+                            </div>
+                            <div class="rightSide">
+                                <img class="iconsRightSideSong" src="icons/deleteFromPlaylist.svg" alt="Delete from playlist">
+                                <img class="iconsRightSideSong" src="icons/plus.svg" alt="Plus">
+                                <img class="iconsRightSideSong" src="icons/add to queue.svg" alt="add to queue">
+                                <img class="iconsRightSideSong" src="icons/likeFill.svg" alt="Like">
+                                <span class="convertWhiteTextToLightGrey">13:50</span>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+            <div id="higherMainContainer3">
+                <div id="mainContainer3">
+                    <div class="queueHeading">Queue</div>
+                    <ul class="ulSongQueueHtml">
+                        <!-- <li class="queueSong">
+                            <div class="queueLeftSide">
+                                <div class="queue-number-image convertWhiteTextToLightGrey">
+                                    <div class="queue-number">1</div>
+                                </div>
+                                <img class="songCoverImgSong" src="cover.jpeg" alt="cover">
+                                <div class="songAndArtist">
+                                    <div class="songName">Look Up At The Stars</div>
+                                    <div class="artistName convertWhiteTextToLightGrey">Shawn Mendes</div>
+                                </div>
+                            </div>
+
+                            <div class="queueRightSide">
+                                <img class="iconsRightSideSong" src="icons/like.svg" alt="Like">
+                                <span class="convertWhiteTextToLightGrey">3:50</span>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="playbar">
+            <div id="higherPlaybar1">
+                <div class="playbar1">
+                    <div class="leftPlaybar1">
+                        <img src="songs_covers/cover0.jpeg" class="currentlyPlayingSongCover playbarSongCover" alt="">
+                        <div>
+                            <div
+                                class="currentlyPlayingSongName songNamePlaybar1 scrolling-container scrolling-container1">
+                                <div class="scrolling-text scrolling-text1 cp"></div>
+                            </div>
+                            <div
+                                class="currentlyPlayingArtistname artistNamePlaybar1 convertWhiteTextToLighterGrey scrolling-container scrolling-container1">
+                                <div class="scrolling-text scrolling-text1 cp"></div>
+                            </div>
+                        </div>
+                        <img class="currentlyPlayingSongLikedOrNot controlsScale" src="icons/like.svg" width="23px" alt="">
+                    </div>
+                    <div class="middlePlaybar1">
+                        <div class="controls">
+                            <!-- <img width="30px" class="controlsScale" src="icons/shuffleGreen.svg" alt=""> -->
+                            <img width="30px" class="controlsScale shuffle" src="icons/shuffle.svg" alt="">
+
+                            <img width="30px" class="controlsScale previous" src="icons/skipPrevious.svg" alt="">
+
+                            <!-- <img width="30px" class="controlsScale" src="icons/pauseCircle.svg" alt=""> -->
+                            <img width="30px" class="controlsScale playOrPause" src="icons/playCircle.svg" alt="">
+
+                            <img width="30px" class="controlsScale next" src="icons/skipNext.svg" alt="">
+
+                            <img width="26px" class="controlsScale repeat" src="icons/repeat.svg" alt="">
+                            <!-- <img width="26px" class="controlsScale" src="icons/repeatGreen.svg" alt=""> -->
+                            <!-- <img width="26px" class="controlsScale" src="icons/repeatOneGreen.svg" alt=""> -->
+                        </div>
+                        <div class="seekbar">
+                            <span class="currentTime convertWhiteTextToLightGrey">0:00</span>
+                            <input type="range" class="range1 range" value="0" step="0.00001">
+                            <span class="durationTime convertWhiteTextToLightGrey">3:55</span>
+                        </div>
+                    </div>
+                    <div class="rightPlaybar1">
+                        <img width="20px" class="controlsScale queueImg" src="icons/queue.svg"
+                            onclick="toggleContainer3()">
+                        <!-- <img width="20px" class="controlsScale" src="icons/queueGreen.svg" alt=""> -->
+                        <span>
+                            <img width="20px" class="controlsScale" src="icons/volume.svg">
+                            <span id="volumePercentage" style="display: none;">100</span>
+                        </span>
+                        <!-- <img width="20px" class="controlsScale" src="icons/volumeMute.svg" alt=""> -->
+                        <input type="range" name="" class="range2" id="" step="1" value="100">
+                        <!-- <img width="14px" class="controlsScale" src="icons/fullScreen.svg" alt="" onclick="toggleUltraContainer2()"> -->
+                        <img width="14px" class="controllingUltraContainer controlsScale" src="icons/fullScreen.svg"
+                            onclick="toggleUltraContainer2()">
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="higherPlaybar2">
+                <div class="playbar2">
+                    <div class="upperPlaybar2">
+                        <div class="leftPlayBar2" onclick="toggleUltraContainer2()">
+                            <img src="songs_covers/cover0.jpeg" class="currentlyPlayingSongCover playbar2CoverImg"
+                                alt="Currently playing song cover">
+                            <div>
+                                <div class="currentlyPlayingSongName scrolling-container scrolling-container2">
+                                    <div class="scrolling-text scrolling-text2 playbar2SongName">Song Name</div>
+                                </div>
+                                <div
+                                    class="currentlyPlayingArtistname convertWhiteTextToLighterGrey scrolling-container scrolling-container2">
+                                    <div class="scrolling-text scrolling-text2 playbar2ArtistName">Artist Name</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rightPlayBar2">
+                            <img width="30px" class="controlsScale playOrPause" src="icons/playCircle.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="lowerPlaybar2">
+                        <span class="currentTime convertWhiteTextToLightGrey" style="display: none;">0:00</span>
+                        <input type="range" class="range3 range" value="0" step="0.00001">
+                        <span class="durationTime convertWhiteTextToLightGrey" style="display: none;">3:55</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ultraContainer2">
+        <div id="ultraContainer2Contents">
+            <div id="upperFullScreen">
+                <div id="topUpperFullScreen">
+                    <img class="controllingUltraContainer controlsScale" src="icons/downArrowClose.svg"
+                        onclick="toggleUltraContainer2()">
+                    <span class="currentlyPlayingPlaylistName convertWhiteTextToLighterGrey">Playlist Name</span>
+                    <span>&nbsp;&nbsp;</span>
+                </div>
+                <div id="middleUpperFullScreen">
+                    <img src="songs_covers/cover0.jpeg" class="currentlyPlayingSongCover cp"
+                        alt="Currently playing song cover">
+                </div>
+                <div id="lowerUpperFullScreen">
+                    <div id="songNameAndStuff">
+                        <div>
+                            <div class="currentlyPlayingSongName scrolling-container scrolling-container3">
+                                <div class="scrolling-text scrolling-text3 cp"></div>
+                            </div>
+                            <div
+                                class="currentlyPlayingArtistname artistNamePlaybar1 convertWhiteTextToLighterGrey scrolling-container scrolling-container3">
+                                <div class="scrolling-text scrolling-text3 cp"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <img class="currentlyPlayingSongLikedOrNot controlsScale" src="icons/like.svg" width="23px" alt="">
+                        </div>
+                    </div>
+                    <div id="seekBarInFullScreen">
+                        <span class="currentTime convertWhiteTextToLightGrey">0:00</span>
+                        <input type="range" class="range4 range" value="0" step="0.00001">
+                        <span class="durationTime convertWhiteTextToLightGrey">3:55</span>
+                    </div>
+                    <div id="controlsInFullScreen">
+                        <img width="50px" class="controlsScale shuffle" src="icons/shuffle.svg" alt="">
+                        <img width="50px" class="controlsScale previous" src="icons/skipPrevious.svg" alt="">
+                        <img width="50px" class="controlsScale playOrPause" src="icons/playCircle.svg" alt="">
+                        <img width="50px" class="controlsScale next" src="icons/skipNext.svg" alt="">
+                        <img width="43px" class="controlsScale repeat" src="icons/repeat.svg" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="lowerFullScreen">
+                <div id="parentOfUlSongQueueHtml">
+                    <div class="ulSongQueueHtml"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="alertBox"></div>
+
+    <div id="dialogBox" onclick="event.stopPropagation();">
+        <div class="upperDialogBox">
+            <span>Add Song To A PlayList</span>
+            <span onclick="closeDialog()"><img src="icons/closeCross.svg" class="controlsScale"></span>
+        </div>
+        <div class="lowerDialogBox">
+            <li>
+                <img src="songs_covers/cover0.jpeg">
+                <span>PlayList Name</span>
+            </li>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

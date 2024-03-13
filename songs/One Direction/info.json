@@ -1,0 +1,14 @@
+{
+    "title": "One Direction",
+    "description": "Songs for You",
+    "path": "songs/One Direction/cover.jpeg",
+    "type": "Playlist",
+    "owner": "Rishit Umesh Padagatti",
+    "songs": [
+        "songs/global/Little Things - One Direction.mp3",
+        "songs/global/Perfect - One Direction.mp3",
+        "songs/global/Night Changes - One Direction.mp3",
+        "songs/global/Drag me down - One Direction.mp3",
+        "songs/global/History - One Direction.mp3"
+    ]
+}

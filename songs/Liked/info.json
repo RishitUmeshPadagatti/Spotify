@@ -1,0 +1,11 @@
+{
+    "title": "Liked Songs",
+    "description": "Liked Songs",
+    "path": "songs/Liked/cover.png",
+    "type": "Directory",
+    "owner": "Rishit Umesh Padagatti",
+    "songs": [
+        "songs/global/Sunflower - Post Malone, Swae Lee.mp3",
+        "songs/global/Better - ZAYN.mp3"
+    ]
+}

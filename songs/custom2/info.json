@@ -1,0 +1,8 @@
+{
+    "title": "customPlaylist2",
+    "description": "Add your Songs",
+    "path": "songs/custom2/cover.jpeg",
+    "type": "Playlist",
+    "owner": "User",
+    "songs": []
+}

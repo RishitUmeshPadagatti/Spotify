@@ -1,0 +1,15 @@
+{
+    "title": "Zayn bhaiya",
+    "description": "Zayn Malik Songs",
+    "path": "songs/zayn/cover.jpeg",
+    "type": "Playlist",
+    "owner": "Rishit Padagatti",
+    "songs": [
+        "songs/global/Tightrope - ZAYN.mp3",
+        "songs/global/PILLOWTALK - ZAYN.mp3",
+        "songs/global/Let Me - ZAYN.mp3",
+        "songs/global/I Dont Wanna Live Forever - ZAYN, Taylor Swift.mp3",
+        "songs/global/Better - ZAYN.mp3",
+        "songs/global/Dusk till dawn - Zayn Malik, Sia.mp3"
+    ]
+}

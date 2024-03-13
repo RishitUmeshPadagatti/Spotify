@@ -1,0 +1,14 @@
+{
+    "title": "Shawn Mendes",
+    "description": "Shawn Mendes Songs",
+    "path": "songs/Shawn Mendes/cover.jpeg",
+    "type": "Album",
+    "owner": "Rishit Umesh Padagatti",
+    "songs": [
+        "songs/global/Itll Be Okay - Shawn Mendes.mp3",
+        "songs/global/Monster - Shawn Mendes, Justin Bieber.mp3",
+        "songs/global/In My Blood - Shawn Mendes.mp3",
+        "songs/global/Look Up At The Stars - Shawn Mendes.mp3",
+        "songs/global/Lost In Japan - Shawn Mendes.mp3"
+    ]
+}

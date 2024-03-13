@@ -1,0 +1,147 @@
+/* TARGETTING #sidebar -> #upperSidebar*/
+.upperAndLowerSidebar {
+    /* border: 1px solid red; */
+    background-color: var(--darkGrey);
+    margin: 8px;
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+
+#sidebar #upperSidebar ul li {
+    display: flex;
+    align-items: center;
+    padding: 12px 12px;
+    /* justify-content: center; */
+}
+
+.textInSidebar {
+    padding-left: 13px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+/* TARGETIING #sidebar -> #lowerSidebar */
+.upperSectionOfLowerSidebar {
+    width: 100%;
+    /* border: 1px solid yellow; */
+    display: flex;
+    padding: 9px 15px 9px 12px;
+    justify-content: space-between;
+}
+
+.yourLibrary {
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+}
+
+.plusAndLeftArrow {
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.playlistsContainerUl {
+    overflow-y: auto;
+    /* border: 1px solid white; */
+    height: calc(100vh - var(--playbarHeight) - 200px);
+}
+
+.playlistsContainerUl li {
+    /* border: 1px solid white; */
+    padding: 12px 12px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* margin: 7px 0px 0px 0px; */
+}
+
+.rightOfPlaylistCover {
+    padding-left: 13px;
+}
+
+.rightOfPlaylistCover img{
+    height: 10px;
+}
+
+.playlistOwner {
+    /* border: 1px solid white; */
+    margin-top: 2px;
+}
+
+#leftSvg{
+    /* display: none; */
+    transition: transform 0.4s ease-in-out;
+}
+
+#sidebar span{
+    transition: all 5s ease-in-out;
+    /* background-color: red; */
+}
+
+.leftSvgRotate{
+    /* display: block; */
+    transform: rotate(180deg);
+}
+
+.min-content-width{
+    width: min-content;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.display-none{
+    display: none;
+}
+
+#sidebar{
+    transition: all 3s ease-in-out;
+}
+
+
+/* @media only screen and (max-width: 768px) {
+    #sidebar span,
+    .playlistsContainerUl li div,
+    .plusAndLeftArrow img:first-child,
+    .yourLibrary
+    {
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .upperSectionOfLowerSidebar{
+        justify-content: center;
+    }
+
+    .playlistsContainerUl li{
+        margin: 0;
+    }
+
+    #sidebar{
+        width: min-content;
+    }
+} */
+
+@media only screen and (max-width: 425px) {
+    .upperAndLowerSidebar {
+        margin: 4px;
+        padding: 4px 6px;
+        border-radius: 10px;
+    }
+    #sidebar #upperSidebar ul li {
+        display: flex;
+        align-items: center;
+        padding: 12px 5px;
+    }
+    .playlistsContainerUl li {
+        padding: 12px 5px;
+        display: flex;
+        align-items: center;
+    }
+
+}

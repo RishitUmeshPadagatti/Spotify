@@ -1,0 +1,129 @@
+.upperMainContainer1 {
+    /* border: 1px solid white; */
+    height: max-content;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 8px 8px 8px 0px;
+    padding: 100px 12px 20px 12px;
+    border-radius: 10px;
+
+    background: radial-gradient(circle at center, #9cb99a 0%, #7569ba 100%);
+    background-size: 400% 400%;
+    animation: animationName 10s ease infinite;
+    /* border: 1px solid red; */
+}
+
+@keyframes animationName {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.miniCard {
+    min-width: 300px;
+    width: 30%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.miniCard div {
+    padding-left: 13px;
+    font-weight: 700;
+}
+
+.miniCard img {
+    padding: 1px;
+    /* border-radius: 10px 0px 0px 10px; */
+    border-radius: 16px;
+}
+
+
+
+.lowerMainContainer1 {
+    /* border: 1px solid white; */
+
+    background-color: var(--darkGrey);
+    margin: 8px 8px 8px 0px;
+    border-radius: 10px;
+    padding: 12px;
+    height: 95vh;
+    position: relative;
+}
+
+.square {
+    border-radius: 10px;
+    position: absolute;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.square-child-img{
+    height: 90px;
+    width: 90px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px){
+    .square-child-img{
+        height: 80px;
+        width: 80px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .playlistImgMiniCard {
+        width: 37px;
+        height: 37px;
+    }
+
+    .upperMainContainer1 {
+        padding: 40px 12px 40px 12px;
+    }
+
+    .miniCard {
+        border-radius: 10px;
+        min-width: 200px;
+    }
+
+    .miniCard div {
+        padding-left: 5px;
+    }
+
+    .miniCard img {
+        border-radius: 10px;
+    }
+
+    .square-child-img{
+        height: 70px;
+        width: 70px;
+    }
+}

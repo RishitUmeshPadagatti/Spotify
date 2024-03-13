@@ -1,0 +1,106 @@
+/* USEFUL CLASSES */
+.svgToWhite {
+    filter: brightness(0) invert(1);
+}
+
+.grayFilter {
+    filter: grayscale(100%) brightness(0.65);
+    /* background-color: red; */
+}
+
+li {
+    list-style-type: none;
+}
+
+.width30px {
+    width: 30px;
+    padding: 2px;
+}
+
+.convertWhiteTextToLightGrey {
+    color: var(--lightGrey);
+}
+
+.convertWhiteTextToLighterGrey {
+    color: rgb(222, 214, 214)
+}
+
+.playlistImgLibrary {
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.playlistImgMiniCard{
+    width: 65px;
+    height: 65px;
+    /* border-radius: 5px; */
+}
+
+.playListImgUpperMainContainer2{
+    width: 215px;
+    height: 215px;
+    border-radius: 5px;
+}
+
+.playbarSongCover{
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+}
+
+.scrolling-container {
+    /* border: 1px solid red; */
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.scrolling-text {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+/* .randomSquareImg{
+    height: 65px;
+    width: 65px;
+    border-radius: 10px;
+} */
+
+/* SCROLL */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--darkGrey);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 60px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+    background-color: var(--spotifyGreen);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.controlsScale{
+    cursor: pointer;
+}
+.controlsScale:hover{
+    transform: scale(1.1);
+}
+
+.ulSongQueueHtml li:first-child .songName,
+.ulSongQueueHtml li:first-child .queue-number{
+    color: var(--spotifyGreen);
+}
+
+.cp{
+    cursor: pointer;
+}
