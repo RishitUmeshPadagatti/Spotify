@@ -1,5 +1,3 @@
-const cwd = "https://rishit.freewebhostmost.com/"
-
 let LSallFoldersSongs; //localStorage
 let fileLocationAnchorTags; //to not call fetch again
 let globalSongs = [];
